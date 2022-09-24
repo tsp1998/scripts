@@ -1,4 +1,6 @@
 *.env
 !*.example.env
+*.data.txt
+!*.example.data.txt
 *.log
 sample*.sh
