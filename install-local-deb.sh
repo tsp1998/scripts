@@ -1,4 +1,9 @@
-debPath=/home/shubham/Downloads/virtualbox-6.1_6.1.38-153438~Ubuntu~jammy_amd64.deb
-sudo apt update
-sudo apt install $debPath
-sudo apt-get install --fix-broken
+currentPath="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )";
+readarray -t args < "$currentPath/data/install-local-deb.txt";
+for debPath in "${args[@]}"; do
+  echo "installing ${debPath}";
+  sudo apt update
+  sudo apt install "$debPath"
+  sudo apt-get install --fix-broken
+  echo "installed ${debPath}";
+done
