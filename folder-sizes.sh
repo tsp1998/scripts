@@ -1,0 +1,1 @@
+du -hd 1 /home/* | sort -h
