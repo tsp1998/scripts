@@ -1,1 +1,1 @@
-/home/shubham/Downloads/docker-desktop-4.14.1-amd64.deb
+/home/royaltsp/Downloads/apps/google-chrome-stable_current_amd64.deb
