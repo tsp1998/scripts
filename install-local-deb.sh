@@ -1,4 +1,4 @@
-currentPath="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )";
+currentPath="$( cd -- "$(dirname "$1")" >/dev/null 2>&1 ; pwd -P )";
 readarray -t args < "$currentPath/data/install-local-deb.txt";
 for debPath in "${args[@]}"; do
   echo "installing ${debPath}";
